@@ -5,7 +5,7 @@ FROM ghcr.io/p-miranda/docker-test:latest
 WORKDIR /app
 
 # Copy the Python script and requirements file into the container
-COPY program/app2.py .
+COPY app2.py .
 
 # Command to run the Python script
 CMD ["python", "app2.py"]
