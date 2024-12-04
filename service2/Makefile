@@ -1,7 +1,6 @@
-N = 1
-DOCKERFILE = Dockerfile.app$(N)
-DOCKER_IMAGE = custom-py
-CONTAINER = custom-py-container
+DOCKERFILE = Dockerfile.app2
+DOCKER_IMAGE = app2
+CONTAINER = app2-container
 
 build: $(DOCKERFILE)
 	docker build -f $(DOCKERFILE) . -t $(DOCKER_IMAGE)
